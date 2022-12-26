@@ -1,11 +1,12 @@
 'use strict';
 console.log("index.js");
 
-// import { initializeApp } from "firebase/app";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-// import { getAnalytics } from "firebase/analytics";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+import { initializeApp } from "firebase/app";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+import { getDatabase, ref, set } from "firebase/database";
+// import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyATXy5h6R5jFoy1gEppzBXABhwfxfCOEYc",

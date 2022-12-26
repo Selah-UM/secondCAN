@@ -11,6 +11,14 @@
     "express": "~4.16.1",
     "firebase": "^9.15.0",
     "helmet": "^6.0.1",
+    "jquery": "^3.6.3",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@babel/preset-env": "7.16.11",
+    "babel-loader": "8.2.3",
+    "webpack": "5.69.1",
+    "webpack-cli": "4.9.2"
   }
 }
