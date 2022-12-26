@@ -1,6 +1,12 @@
 'use strict';
 console.log("index.js");
 
+// import { initializeApp } from "firebase/app";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+// import { getAnalytics } from "firebase/analytics";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
 const firebaseConfig = {
     apiKey: "AIzaSyATXy5h6R5jFoy1gEppzBXABhwfxfCOEYc",
     authDomain: "chatandnote.firebaseapp.com",
@@ -12,9 +18,17 @@ const firebaseConfig = {
     measurementId: "G-CFWX5TT79V"
 }
 
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-const db = firebase.database();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getDatabase();
 
-const r =  db.ref("A-key").push();
-r.set("Hello!");
+// firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
+// const db = firebase.database();
+
+// const r =  db.ref("A-key").push();
+// r.set("Hello!");
+
+set(ref(db,"A-key"), {
+  val: "a"
+});
